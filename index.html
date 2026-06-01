@@ -1,0 +1,606 @@
+
+Trà mãn cầu
+8800748180
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Một Món Quà Nhỏ Dành Cho An ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(
+180deg,
+#ffd6e8,
+#ffe9f2,
+#fff5fa
+);
+overflow-x:hidden;
+color:#444;
+}
+
+section{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:40px 20px;
+text-align:center;
+}
+
+h1{
+font-size:3rem;
+color:#ff4f8b;
+}
+
+h2{
+color:#ff4f8b;
+margin-bottom:20px;
+}
+
+.btn{
+padding:15px 30px;
+border:none;
+border-radius:999px;
+background:#ff5c97;
+color:white;
+cursor:pointer;
+margin-top:20px;
+font-size:1rem;
+}
+
+.glass{
+background:rgba(255,255,255,.5);
+backdrop-filter:blur(10px);
+padding:30px;
+border-radius:25px;
+max-width:900px;
+width:90%;
+}
+
+.counter{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:15px;
+margin-top:20px;
+}
+
+.time-box{
+background:white;
+padding:20px;
+border-radius:20px;
+}
+
+.time-box span{
+font-size:2rem;
+font-weight:bold;
+color:#ff4f8b;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+width:90%;
+max-width:1000px;
+}
+
+.gallery img{
+width:100%;
+height:280px;
+object-fit:cover;
+border-radius:20px;
+}
+
+.heart{
+position:fixed;
+pointer-events:none;
+z-index:9999;
+animation:fly 6s linear forwards;
+}
+
+@keyframes fly{
+from{
+transform:translateY(0);
+opacity:1;
+}
+to{
+transform:translateY(-120vh);
+opacity:0;
+}
+}
+
+.music-btn{
+position:fixed;
+bottom:20px;
+right:20px;
+width:60px;
+height:60px;
+border:none;
+border-radius:50%;
+background:#ff5c97;
+color:white;
+font-size:24px;
+cursor:pointer;
+}
+
+#typing{
+min-height:80px;
+}
+
+@media(max-width:768px){
+
+.counter{
+grid-template-columns:repeat(2,1fr);
+}
+
+h1{
+font-size:2rem;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<audio id="bgMusic" loop>
+<source src="noinaycoanh.mp3" type="audio/mpeg">
+</audio>
+
+<button class="music-btn" onclick="toggleMusic()">
+🎵
+</button>
+
+<section>
+
+<h1 id="typing"></h1>
+
+<p style="margin-top:20px;font-size:1.2rem;">
+Một món quà nhỏ dành cho An ❤️
+</p>
+
+<button class="btn" onclick="startJourney()">
+Mở Quà
+</button>
+
+</section>
+<section>
+
+<h2>
+❤️ Chúng Ta Đã Bên Nhau
+</h2>
+
+<div class="glass">
+
+<div class="counter">
+
+<div class="time-box">
+<span id="days">0</span>
+<div>Ngày</div>
+</div>
+
+<div class="time-box">
+<span id="hours">0</span>
+<div>Giờ</div>
+</div>
+
+<div class="time-box">
+<span id="minutes">0</span>
+<div>Phút</div>
+</div>
+
+<div class="time-box">
+<span id="seconds">0</span>
+<div>Giây</div>
+</div>
+
+</div>
+
+</div>
+
+<section>
+
+<h2>
+📸 Album Của An ❤️
+</h2>
+
+<p style="margin-bottom:20px;">
+Những khoảnh khắc đáng yêu mà anh luôn muốn lưu giữ.
+</p>
+
+<div class="gallery">
+
+<img src="an1.jpg">
+<img src="an2.jpg">
+<img src="an3.jpg">
+<img src="an4.jpg">
+<img src="an5.jpg">
+<img src="an6.jpg">
+<img src="an7.jpg">
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>
+💌 Gửi An
+</h2>
+
+<div class="glass">
+
+<p style="
+font-size:1.1rem;
+line-height:2;
+text-align:left;
+">
+
+Gửi An ❤️
+
+<br><br>
+
+Nếu em đang đọc những dòng này thì có lẽ anh đã gom tất cả những điều muốn nói vào món quà nhỏ này.
+
+<br><br>
+
+Anh không phải là người giỏi ăn nói, cũng không phải lúc nào cũng biết cách thể hiện tình cảm.
+
+Nhưng có một điều anh luôn chắc chắn, đó là anh thật sự rất trân trọng em.
+
+<br><br>
+
+Cảm ơn em vì đã xuất hiện trong cuộc đời anh.
+
+<br><br>
+
+Cảm ơn em vì những lần em quan tâm anh, những lần em làm anh cười và cả những lúc em ở bên anh khi anh cần một người để sẻ chia.
+
+<br><br>
+
+Từ ngày 26/04/2025 đến hôm nay, mỗi ngày trôi qua đều trở nên đặc biệt hơn vì có em.
+
+<br><br>
+
+Anh không hứa sẽ hoàn hảo, nhưng anh hứa sẽ luôn cố gắng để yêu thương em bằng tất cả sự chân thành của mình.
+
+<br><br>
+
+Yêu em rất nhiều ❤️
+
+<br><br>
+
+— Huyên
+
+</p>
+
+</div>
+
+</section><section>
+
+<h2>
+🎁 Một Điều Bí Mật
+</h2>
+
+<div class="glass">
+
+<p>
+Nhấn vào hộp quà nhé ❤️
+</p>
+
+<div
+onclick="openGift()"
+style="
+font-size:120px;
+cursor:pointer;
+margin-top:20px;
+">
+🎁
+</div>
+
+<div
+id="giftMessage"
+style="
+display:none;
+margin-top:20px;
+font-size:1.3rem;
+color:#ff4f8b;
+">
+
+Anh cảm thấy thật may mắn vì đã gặp được em ❤️
+
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>
+🌷 Một Câu Hỏi Nhỏ
+</h2>
+
+<div class="glass">
+
+<p style="
+font-size:1.3rem;
+margin-bottom:20px;
+">
+
+Nếu được chọn lại một lần nữa...
+
+<br><br>
+
+Em có còn chọn anh không? ❤️
+
+</p>
+
+<button
+class="btn"
+onclick="chooseLove()">
+Có ❤️
+</button>
+
+<button
+class="btn"
+onclick="chooseLove()">
+Chắc Chắn Có ❤️❤️
+</button>
+
+<div
+id="loveAnswer"
+style="
+display:none;
+margin-top:25px;
+font-size:1.5rem;
+font-weight:bold;
+color:#ff4f8b;
+">
+
+Vậy thì anh vẫn sẽ chọn em ❤️
+
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h1>
+❤️ Huyên & An ❤️
+</h1>
+
+<p style="
+margin-top:20px;
+font-size:1.2rem;
+">
+
+26/04/2025
+
+<br><br>
+
+Cảm ơn em đã đến bên anh ❤️
+
+</p>
+
+</section>
+
+
+<script>
+
+const text =
+"Một Món Quà Nhỏ Dành Cho An ❤️";
+
+let i = 0;
+
+function typeWriter(){
+
+if(i < text.length){
+
+document.getElementById(
+"typing"
+).innerHTML += text.charAt(i);
+
+i++;
+
+setTimeout(
+typeWriter,
+100
+);
+
+}
+
+}
+
+typeWriter();
+
+
+const loveDate =
+new Date(
+"2025-04-26T00:00:00"
+);
+
+function updateCounter(){
+
+const now =
+new Date();
+
+const diff =
+now - loveDate;
+
+const days =
+Math.floor(
+diff/(1000*60*60*24)
+);
+
+const hours =
+Math.floor(
+(diff%(1000*60*60*24))
+/
+(1000*60*60)
+);
+
+const minutes =
+Math.floor(
+(diff%(1000*60*60))
+/
+(1000*60)
+);
+
+const seconds =
+Math.floor(
+(diff%(1000*60))
+/
+1000
+);
+
+document.getElementById(
+"days"
+).innerText = days;
+
+document.getElementById(
+"hours"
+).innerText = hours;
+
+document.getElementById(
+"minutes"
+).innerText = minutes;
+
+document.getElementById(
+"seconds"
+).innerText = seconds;
+
+}
+
+setInterval(
+updateCounter,
+1000
+);
+
+updateCounter();
+
+
+let musicPlaying =
+false;
+
+function toggleMusic(){
+
+const music =
+document.getElementById(
+"bgMusic"
+);
+
+if(musicPlaying){
+
+music.pause();
+musicPlaying=false;
+
+}else{
+
+music.play();
+musicPlaying=true;
+
+}
+
+}
+
+
+function startJourney(){
+
+toggleMusic();
+
+createHearts();
+
+}
+
+
+function createHearts(){
+
+setInterval(()=>{
+
+const heart =
+document.createElement(
+"div"
+);
+
+heart.className =
+"heart";
+
+heart.innerHTML =
+["❤️","💕","💖","💗"]
+[Math.floor(
+Math.random()*4
+)];
+
+heart.style.left =
+Math.random()*100
++
+"vw";
+
+heart.style.bottom =
+"-30px";
+
+heart.style.fontSize =
+(
+20+
+Math.random()*20
+)
++"px";
+
+document.body
+.appendChild(
+heart
+);
+
+setTimeout(()=>{
+heart.remove();
+},6000);
+
+},400);
+
+}
+
+
+function openGift(){
+
+document.getElementById(
+"giftMessage"
+).style.display =
+"block";
+
+}
+
+
+function chooseLove(){
+
+document.getElementById(
+"loveAnswer"
+).style.display =
+"block";
+
+}
+
+</script>
+
+</body>
+</html>
